@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner & QR generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>QR Code Generator & URL Shortner</h1>
+    </div>
+    <div class="container">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p>Paste an URL or enter text to create QR Code</p>
+        </header>
+        <div class="form">
+            <input type="text" spellcheck="false" placeholder="Enter text or URL">
+            <button>Generate QR Code</button>
+        </div>
+        <div class="qr-code">
+            <img src="" alt="qr-code">
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+        <h1>URL Shortner</h1>
+        <p>Enter URL To Shorten</p>
+        </header>
+       <div class="form">
+            <input type="text" id="originalUrl" placeholder="https://example.com">
+            <button id="short-btn">Short It</button>
+            <p>Shortened URL</p>
+            <textarea id="shortenedUrl" rows="2" readonly></textarea>
+            <button onclick="copy()" id="short-btn">Copy</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
